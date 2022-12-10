@@ -15,7 +15,7 @@
       <tr>
         <td><%= tweet.body %></td>
         <td>
-          <%= audio_tag(tweet.file, autoplay: false, loop: false, controls: true) %>
+          <%= audio_tag(tweet.audio_file, autoplay: false, loop: false, controls: true) %>
         </td>
         <td><%= link_to 'Show', tweet %></td>
         <td><%= link_to 'Edit', edit_tweet_path(tweet) %></td>

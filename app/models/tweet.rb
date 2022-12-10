@@ -1,3 +1,3 @@
 class Tweet < ApplicationRecord
-  mount_uploader :file, AudiofileUploader
+  mount_uploader :audio_file, AudiofileUploader
 end

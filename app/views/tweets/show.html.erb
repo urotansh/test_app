@@ -9,7 +9,7 @@
   <strong>Audio:</strong>
 <p>
 <div>
-  <%= audio_tag(@tweet.file, autoplay: true, loop: true, controls: true) %>
+  <%= audio_tag(@tweet.audio_file, autoplay: true, loop: true, controls: true) %>
 </div>
 
 <%= link_to 'Edit', edit_tweet_path(@tweet) %> |
