@@ -16,6 +16,8 @@
     <%= form.text_area :body %>
     <%= form.label :audio_file, "Audio" %>
     <%= form.file_field :audio_file, :size => 140 %>
+    <%= form.label :video_file, "Video" %>
+    <%= form.file_field :video_file, :accept => 'video/*' %>
   </div>
 
   <div class="actions">
