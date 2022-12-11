@@ -9,7 +9,16 @@
   <strong>Audio:</strong>
 <p>
 <div>
-  <%= audio_tag(@tweet.audio_file, autoplay: true, loop: true, controls: true) %>
+  <%= audio_tag @tweet.audio_file, autoplay: true, loop: true, controls: true %>
+</div>
+
+<p>
+  <strong>Video:</strong>
+<p>
+<div>
+  <% if @tweet.video_file.present? %>
+    <%= video_tag @tweet.video_file.url, autoplay: true, muted: true, controls: true, size: "300x200"%>
+  <% end %>
 </div>
 
 <%= link_to 'Edit', edit_tweet_path(@tweet) %> |
