@@ -6,6 +6,8 @@
   <thead>
     <tr>
       <th>Body</th>
+      <th>Audio</th>
+      <th>Video</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,7 +17,9 @@
       <tr>
         <td><%= tweet.body %></td>
         <td>
-          <%= audio_tag tweet.audio_file, autoplay: false, loop: false, controls: true %>
+          <% if tweet.audio_file.present? %>
+            <%= audio_tag tweet.audio_file, autoplay: false, loop: false, controls: true %>
+          <% end %>
         </td>
         <td>
           <% if tweet.video_file.present? %>

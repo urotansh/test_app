@@ -9,7 +9,9 @@
   <strong>Audio:</strong>
 <p>
 <div>
-  <%= audio_tag @tweet.audio_file, autoplay: true, loop: true, controls: true %>
+  <% if @tweet.audio_file.present? %>
+    <%= audio_tag @tweet.audio_file, autoplay: true, loop: true, controls: true %>
+  <% end %>
 </div>
 
 <p>
