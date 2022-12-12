@@ -1,3 +1,15 @@
 // Place all the styles related to the tweets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.rails1 {
+  height: 100px;
+  width: 500px;
+  background-image: url("rails1.png");
+  background-position: center center;
+}
+.rails2 {
+  height: 100px;
+  width: 500px;
+  background-image: image-url("rails2.png");
+  background-position: center center;
+}
